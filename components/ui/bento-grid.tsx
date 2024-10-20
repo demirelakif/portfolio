@@ -1,6 +1,12 @@
+'use client'
 import { cn } from "@/lib/utils";
 import { BackgroundGradientAnimation } from "./background-gradient-animation";
 import { GlobeDemo } from "./GridGlobe";
+import Lottie from "react-lottie";
+import { useState } from "react";
+import animationData from '@/data/confetti.json';
+import MagicButton from "./MagicButton";
+import { FaCopy } from "react-icons/fa";
 
 export const BentoGrid = ({
   className,
@@ -42,6 +48,12 @@ export const BentoGridItem = ({
   titleClassName?: string,
   spareImg?: string
 }) => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText("demirel.akif@hotmail.com");
+    setCopied(true);
+  }
   return (
     <div
       className={cn(
@@ -71,10 +83,11 @@ export const BentoGridItem = ({
           )}
         </div>
         {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 flex items-center justify-center text-white font-bold"></div>
+          <BackgroundGradientAnimation containerClassName="absolute">
+
           </BackgroundGradientAnimation>
         )}
+
 
         {id === 2 && (
           <GlobeDemo />
@@ -90,7 +103,7 @@ export const BentoGridItem = ({
             </div>
 
             <div className="flex flex-col gap-3 md:gap-3 lg:gap-3">
-            <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
+              <span className="py-4 px-3 rounded-lg text-center bg-[#10132e]" />
               {['Python', 'React-Native', 'Express.js'].map((tech, index) => (
                 <span key={index} className="py-2 lg:py-5 lg:px-3 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg bg-[#10123E]">{tech}</span>
               ))}
@@ -109,11 +122,34 @@ export const BentoGridItem = ({
           <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
             {title}
           </div>
+
+
+          {id === 6 && (
+            <div className="mt-5 relative">
+              <div className={`absolute -bottom-5 right-0`}>
+                <Lottie options={{
+                  loop: copied,
+                  autoplay: copied,
+                  animationData: animationData,
+                  rendererSettings: {
+                    preserveAspectRatio: 'xMidYMid slice'
+                  }
+                }} />
+              </div>
+              <MagicButton
+                title={copied ? "Email Copied" : "Copy Email"}
+                icon={<FaCopy />}
+                position="right"
+                otherClasses=""
+                handleClick={handleCopy}
+              />
+            </div>
+
+          )}
+
+
         </div>
       </div>
-      {/* <div className="group-hover/bento:translate-x-2 transition duration-200">
-
-      </div> */}
     </div>
   );
 };
