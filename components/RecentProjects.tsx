@@ -1,8 +1,5 @@
 import { projects } from '@/data'
 import React from 'react'
-import { ThreeDCardDemo } from './ui/ThreeDCard'
-import image from 'next/image'
-import { title } from 'process'
 import { FaArrowRight } from 'react-icons/fa'
 import { CardContainer, CardBody, CardItem } from './ui/3d-card'
 import Image from 'next/image'
