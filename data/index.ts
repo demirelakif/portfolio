@@ -8,17 +8,18 @@ export const navItems = [
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "I am versatile, entrepreneurial, and always striving for self-improvement.",
     description: "",
-    className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
-    imgClassName: "w-full h-full",
-    titleClassName: "justify-end",
-    img: "/b1.svg",
+    className: "lg:col-span-3 md:col-span-6 md:row-span-4",
+    imgClassName: "",
+    titleClassName: "justify-end bg-black-100 bg-opacity-30 rounded-xl pl-4 py-3",
+    exClassName:"bg-black-100 bg-opacity-10 rounded-xl pl-4 py-3",
+    img: "/ako-1.jpg",
     spareImg: "",
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "I constantly seek to stay updated.",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -27,20 +28,10 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
-    imgClassName: "",
-    titleClassName: "justify-center",
-    img: "",
-    spareImg: "",
-  },
-  {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Tech aficionado fueled by a passion for crafting innovative solutions.",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/grid.svg",
@@ -49,7 +40,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently working on a Full Stack Video Conferancing App",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -59,9 +50,9 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Do you want to contact me?",
     description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+    className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center md:max-w-full max-w-60 text-center",
     img: "",
@@ -72,129 +63,66 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "GitGel: Blockchain Based Taxi Application",
+    des: "This taxi app enables payments via in-app Ethereum wallets, is a Teknofest 2024 finalist, and received a 1M TL KOSGEB grant.",
+    img: "/gitgel.png",
+    iconLists: ["/re.svg","/solidity.svg","/expo.svg","/mongo.svg","/js.svg", "/figma.svg"],
+    link: "https://www.youtube.com/watch?v=CKHgJQWFOak",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: " Mobile Pitch Booking Application",
+    des: "The app allows football field owners and users to manage pitches, make reservations, and handle user management efficiently.",
+    img: "/mvScr.png",
+    iconLists: ["/re.svg","/expo.svg","/mongo.svg","/js.svg", "/figma.svg"],
+    link: "https://github.com/demirelakif/hali-saha-mobile",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "CarBidding Website",
+    des: "A web application for vehicle offer sales using .NET, Blazor, and Entity Framework Core.",
+    img: "/carBidding.png",
+    iconLists: ["/dotnet.svg", "/blazor.svg", "/entity-framework.svg"],
+    link: "https://github.com/demirelakif/BlazorEFCore_CarBidding",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
-  },
-];
-
-export const testimonials = [
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-];
-
-export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
-  {
-    id: 3,
-    name: "HOSTINGER",
-    img: "/host.svg",
-    nameImg: "/hostName.svg",
-  },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
-  {
-    id: 5,
-    name: "docker.",
-    img: "/dock.svg",
-    nameImg: "/dockerName.svg",
+    title: "ChatBot Website",
+    des: "This project is a chatbot application powered by Node.js, Express, Express-Session and MongoDB.",
+    img: "/chatbot.png",
+    iconLists: ["/re.svg","/mongo.svg","/js.svg"],
+    link: "https://github.com/demirelakif/ChatBotApplication",
   },
 ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Engineer",
+    desc: "Created API software using Python, managing data flow and optimizing cross-system interactions.Developed AI models from scratch, enhancing datarecognition capabilities. Curated and prepared essential datasets foroptimal model performance. Integrated AI models into other systems via APIs for user-friendly access.",
+    date:"09/2021-10/2022",
     className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
+    thumbnail: "/nacsoft.jpeg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Full Stack Engineer / Founder",
+    date:"12/2023-10/2024",
+    desc: "As one of the co-founders of Bloksoft, I developed the mobile taxi application GitGel using React Native and integrated blockchain technologies using Solidity and Node.js. We were accepted into the TUBITAK-2209 program and secured a grant of 1 million TL through the KOSGEB Mobility-Oriented Advanced Entrepreneur Support Program",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
+    thumbnail: "/bloksoft.jpeg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Software Engineer Intern",
+    desc: "Developed a web application for vehicle offer sales using .NET, Blazor, and Entity Framework Core.",
+    date:"09/2024-10/2024",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
+    thumbnail: "/datakod.png",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
+    title: "Freelance Experiances",
     desc: "Developed and maintained user-facing features using modern frontend technologies.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
@@ -205,13 +133,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link:"https://github.com/demirelakif"
   },
   {
     id: 2,
     img: "/twit.svg",
+    link:"https://x.com/demirelakif"
   },
   {
     id: 3,
     img: "/link.svg",
+    link:"https://www.linkedin.com/in/akif-demirel/"
   },
 ];

@@ -35,7 +35,8 @@ export const BentoGridItem = ({
   img,
   imgClassName,
   titleClassName,
-  spareImg
+  spareImg,
+  exClassname
 }: {
   className?: string;
   title?: string | React.ReactNode;
@@ -46,7 +47,8 @@ export const BentoGridItem = ({
   img?: string,
   imgClassName?: string,
   titleClassName?: string,
-  spareImg?: string
+  spareImg?: string,
+  exClassname?:string
 }) => {
   const [copied, setCopied] = useState(false);
 
@@ -66,7 +68,7 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute">
           {img && (
             <img
-              className={cn(imgClassName, 'object-cover object-center')}
+              className={cn(imgClassName, ' object-cover object-center')}
               src={img}
               alt={img}
             />
@@ -93,7 +95,7 @@ export const BentoGridItem = ({
           <GlobeDemo />
         )}
 
-        {id === 3 && (
+        {/* {id === 3 && (
           <div className="flex gap-1 lg:gap-2 w-fit absolute -right-3 lg:-right-2">
             <div className="flex flex-col gap-3 md:gap-3 lg:gap-3">
               {['React.js', 'Next.js', 'TypeScript'].map((tech, index) => (
@@ -111,7 +113,7 @@ export const BentoGridItem = ({
             </div>
             <div />
           </div>
-        )}
+        )} */}
 
 
         <div className={cn(titleClassName, 'group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10')}
@@ -119,7 +121,7 @@ export const BentoGridItem = ({
           <div className="font-sans font-extralight text-[#c1c2d3] text-sm dark:text-neutral-300 md:text-xs lg:text-base z-10 ">
             {description}
           </div>
-          <div className="font-sans font-bold text-lg lg:text-3xl max-w-96 z-10">
+          <div className={cn(exClassname,'font-sans font-bold text-lg lg:text-3xl z-10')}>
             {title}
           </div>
 
