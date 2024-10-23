@@ -50,7 +50,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to contact me?",
+    title: "Want to Learn More About Me?",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -92,6 +92,69 @@ export const projects = [
     img: "/chatbot.png",
     iconLists: ["/re.svg","/mongo.svg","/js.svg"],
     link: "https://github.com/demirelakif/ChatBotApplication",
+  },
+];
+
+export const techStackData = [
+  {
+      title: ".Net",
+      image:"/dotnet.svg"
+  },
+  {
+      title: "Blazor",
+      image:"/blazor.svg"
+  },
+  {
+      title: "Entity Framework",
+      image:"/entity-framework.png"
+  },
+  {
+      title: "Express.js",
+      image:"/express.png"
+  },
+  {
+      title: "Python",
+      image:"/python.png"
+  },
+  {
+    title: "Java",
+    image:"/java.png"
+},
+  {
+      title: "Javascript",
+      image:"/js.svg"
+  },
+  {
+      title: "TypeScript",
+      image:"/ts.svg"
+  },
+  {
+      title: "Node.js",
+      image:"/nodejs.png"
+  },
+  {
+      title: "React/React-Native",
+      image:"/react.png"
+  },
+  {
+      title: "MongoDB",
+      image:"/mongo.svg"
+  },
+  {
+      title: "Next.js",
+      image:"/next.svg"
+  },
+  {
+      title: "Solidity",
+      image:"/solidity.svg"
+  },
+  {
+      title: "Tailwind",
+      image:"/tail.svg"
+  },
+  {
+      title: "Figma",
+      image:"/figma.svg"
   },
 ];
 

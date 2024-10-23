@@ -52,10 +52,11 @@ export const BentoGridItem = ({
 }) => {
   const [copied, setCopied] = useState(false);
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText("demirel.akif@hotmail.com");
+  const handleShowCV = () => {
+    const cvUrl = "/AkifDemirelCv.pdf";  // CV PDF dosyanın URL'si
+    window.open(cvUrl, "_blank");  // Yeni bir sekmede açar
     setCopied(true);
-  }
+  };
   return (
     <div
       className={cn(
@@ -128,7 +129,7 @@ export const BentoGridItem = ({
 
           {id === 6 && (
             <div className="mt-5 relative">
-              <div className={`absolute -bottom-5 right-0`}>
+              {/* <div className={`absolute -bottom-5 right-0`}>
                 <Lottie options={{
                   loop: copied,
                   autoplay: copied,
@@ -137,13 +138,13 @@ export const BentoGridItem = ({
                     preserveAspectRatio: 'xMidYMid slice'
                   }
                 }} />
-              </div>
+              </div> */}
               <MagicButton
-                title={copied ? "Email Copied" : "Copy Email"}
+                title={copied ? "CV Viewed" : "View My CV"}
                 icon={<FaCopy />}
                 position="right"
                 otherClasses=""
-                handleClick={handleCopy}
+                handleClick={handleShowCV}
               />
             </div>
 

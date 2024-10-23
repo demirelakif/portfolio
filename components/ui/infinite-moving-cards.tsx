@@ -2,6 +2,7 @@
 
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
+import { BackgroundGradientAnimation } from "./background-gradient-animation";
 
 export const InfiniteMovingCards = ({
     items,
@@ -11,8 +12,6 @@ export const InfiniteMovingCards = ({
     className,
 }: {
     items: {
-        quote: string;
-        name: string;
         title: string;
         image: string;
     }[];
@@ -74,10 +73,11 @@ export const InfiniteMovingCards = ({
         <div
             ref={containerRef}
             className={cn(
-                "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]",
+                "scroller relative z-20  max-w-7xl overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)] py-6",
                 className
             )}
         >
+                            <BackgroundGradientAnimation containerClassName="absolute h-full w-full"></BackgroundGradientAnimation>
             <ul
                 ref={scrollerRef}
                 className={cn(
@@ -88,16 +88,16 @@ export const InfiniteMovingCards = ({
             >
                 {items.map((item, idx) => (
                     <div
-                        className="max-w-full w-80 relative border rounded-2xl border-b-0 flex-shrink-0 border-slate-700 p-9 flex flex-col items-center justify-between"
-                        style={{
-                            background:
-                              "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
-                          }}
-                        key={item.name}
+                        className="relative flex flex-col items-center justify-between bg-purple bg-opacity-5 p-6 rounded-3xl"
+                        // style={{
+                        //     background:
+                        //       "linear-gradient(180deg, var(--slate-800), var(--slate-900)",
+                        //   }}
+                        key={item.title}
                     >
-                        <img className="lg:w-24 md:w-20 w-16 rounded-3xl" src={item.image} />
+                        <img  className="lg:w-36 md:w-20 w-16 rounded-full" src={item.image} />
 
-                        <h3>{item.title}</h3>
+                        <h3 className="font-sans font-bold text-lg lg:text-xl z-10 pt-3">{item.title}</h3>
                     </div>
 
                 ))}
