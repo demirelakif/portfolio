@@ -14,7 +14,7 @@ export default function Home() {
         <FloatingNav navItems={navItems}/>
         <Hero/>
         <Grid/>
-        <TechStack/>
+        {/* <TechStack/> */}
         <RecentProjects/>
         <Experiance/>
         <Footer/>
