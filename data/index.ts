@@ -82,7 +82,7 @@ export const projects = [
     title: "CarBidding Website",
     des: "A web application for vehicle offer sales using .NET, Blazor, and Entity Framework Core.",
     img: "/carBidding.png",
-    iconLists: ["/dotnet.svg", "/blazor.svg", "/entity-framework.svg"],
+    iconLists: ["/dotnet.svg", "/blazor.svg", "/entity-framework.png"],
     link: "https://github.com/demirelakif/BlazorEFCore_CarBidding",
   },
   {
