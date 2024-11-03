@@ -93,6 +93,14 @@ export const projects = [
     iconLists: ["/re.svg","/mongo.svg","/js.svg"],
     link: "https://github.com/demirelakif/ChatBotApplication",
   },
+  {
+    id: 5,
+    title: "Video Conferencing App",
+    des: "This project is a Zoom clone built with Next.js and Tailwind CSS, allowing users to conduct video and audio calls. It integrates Stream for media streaming and utilizes Clerk for secure authentication.",
+    img: "/videoConferance.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+    link: "https://video-conferancing-app.vercel.app/",
+  },
 ];
 
 export const techStackData = [
