@@ -101,6 +101,14 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
     link: "https://video-conferancing-app.vercel.app/",
   },
+  {
+    id: 5,
+    title: "Game Scout",
+    des: "Game Scout is a web app for gamers to discover popular games and access detailed information using the RAWG API and web scraping techniques. Explore, search, and sort games with up-to-date data.",
+    img: "/game-scout.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/python.png", "/psql.svg"],
+    link: "https://akifs-game-scout.vercel.app/",
+  },
 ];
 
 export const techStackData = [
