@@ -109,8 +109,15 @@ export const projects = [
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/python.png", "/psql.svg"],
     link: "https://akifs-game-scout.vercel.app/",
   },
+  {
+    id: 6,
+    title: "UAV Manufacturing System",
+    des: "UAV Manufacturing System is a Django-based web application designed for managing unmanned aerial vehicles (UAVs) and associated parts. This project allows users to produce and manage both UAVs and parts, track inventory, and assign roles to staff members.",
+    img: "/uav.png",
+    iconLists: ["/django.svg", "/tail.svg", "/docker.svg", "/swagger.png", "/python.png", "/psql.svg"],
+    link: "https://github.com/demirelakif/uav-manufacturing-django",
+  },
 ];
-
 export const techStackData = [
   {
       title: ".Net",
