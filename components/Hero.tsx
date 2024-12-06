@@ -38,7 +38,7 @@ const Hero = () => {
 
 
                     <h1 className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>Experienced in project development, I take great pleasure in delivering results-driven projects with <Cover> lightning speed. </Cover></h1>
-                    <a href='#about'>
+                    <a href='#projects'>
                         <MagicButton title="Show My Works" icon={<FaLocationArrow />} position={'right'} otherClasses={''} />
                     </a>
                 </div>
